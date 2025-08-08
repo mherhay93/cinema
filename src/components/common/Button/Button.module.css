@@ -12,8 +12,8 @@
     font-size: 18px;
     font-weight: 700;
 
-    background: #fff;
-    color: #000;
+    background: var(--white);
+    color: var(--black);
     transition: 0.3s;
 
 }
@@ -24,6 +24,6 @@
 }
 
 .secondary {
-    background: linear-gradient(321deg,rgba(4, 24, 129, 1) 0%, rgba(34, 37, 228, 1) 100%);
-    color: #fff;
+    background: linear-gradient(321deg, var(--dark-blue) 0%, var(--light-blue) 100%);
+    color: var(--white);
 }

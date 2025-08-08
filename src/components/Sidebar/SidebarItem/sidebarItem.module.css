@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 32px;
+    position: relative;
+}
+
+.icon {
+    height: 18px;
+}
+
+.name {
+    color: var(--white);
+    min-width: 100px;
+}
