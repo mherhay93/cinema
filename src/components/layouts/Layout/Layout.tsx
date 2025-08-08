@@ -11,7 +11,7 @@ const Layout = ({ children }: ILayoutProps) => {
     return (
         <div className={styles.container}>
             <Sidebar />
-            <main className={styles.main}>{children}</main>
+            {children}
         </div>
     )
 }

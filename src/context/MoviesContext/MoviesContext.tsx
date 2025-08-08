@@ -1,13 +1,19 @@
 import { type ReactNode, useMemo, useState } from 'react';
+
+import type {IMovie, IMoviesInterface} from '../../types';
 import { MoviesContext } from './MoveProvider.ts';
-import type { IMoviesInterface } from '../../types';
 
 export const MoviesProvider = ({ children }: { children: ReactNode }) => {
     const [movies, setMovies] = useState<IMoviesInterface>({} as IMoviesInterface)
     
+    const changeSelectedMovie = (selectedMovie: IMovie) => {
+      setMovies(prevMovies => ({...prevMovies, Featured: selectedMovie}))
+    }
+    
     const values = useMemo(() => ({
         movies,
         setMovies,
+        changeSelectedMovie
     }), [movies])
     
     return (

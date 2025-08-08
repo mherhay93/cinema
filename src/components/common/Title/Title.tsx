@@ -1,5 +1,5 @@
 import styles from './title.module.css'
-import { splitTextForTitle } from '../../../utils/text.ts';
+import { splitTextForTitle } from '../../../helpers/text.ts';
 
 interface ITitleProps {
     text: string

@@ -1,6 +1,6 @@
 import cn from 'classnames';
 
-import { checkActivePath } from '../../../utils/navigation.ts';
+import { checkActivePath } from '../../../helpers/navigation.ts';
 import styles from './sidebarItem.module.css';
 
 interface ISidebarItemProps {

@@ -1,5 +1,5 @@
 import playIcon from '../../../assets/icons/play_button.svg'
-import { formatToHourMinute } from '../../../utils/date.ts';
+import { formatToHourMinute } from '../../../helpers/date.ts';
 import type { IMovie } from '../../../types';
 import Button from '../../common/Button/Button.tsx';
 import Title from '../../common/Title/Title.tsx';
