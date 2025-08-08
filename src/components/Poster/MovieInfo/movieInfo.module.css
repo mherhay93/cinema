@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 18px;
+    line-height: 28px;
+    z-index: 1;
+    position: relative;
+}
+
+.movie {
+    color: var(--dark-gray);
+    font-weight: 600;
+}
+
+.contentInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.description {
+    width: 50%;
+    margin-bottom: 16px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}

@@ -1,6 +1,7 @@
 .title {
     font-family: 'Cinzel_ExtraBold', serif;
     font-size: 64px;
+    line-height: 64px;
     color: transparent;
     background: url('../../../assets/images/old-wall.webp') repeat;
     -webkit-background-clip: text;

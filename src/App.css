@@ -3,8 +3,10 @@
     --black: #000;
     --black_30: rgba(0, 0, 0, 0.3);
     --black_80: rgba(0, 0, 0, 0.8);
+    --black_0: rgba(0, 0, 0, 0.0);
     --dark-blue: #041881;
     --light-blue: #2225E4;
     --slate-blue: #3B486D;
     --gray: #8D8E90;
+    --dark-gray: #87888A;
 }

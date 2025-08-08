@@ -1,4 +1,4 @@
-import type {ReactNode} from "react";
+import type { ReactNode } from 'react';
 
 import Sidebar from '../../Sidebar/Sidebar.tsx';
 import styles from './layout.module.css';
@@ -11,7 +11,7 @@ const Layout = ({ children }: ILayoutProps) => {
     return (
         <div className={styles.container}>
             <Sidebar />
-            <main>{children}</main>
+            <main className={styles.main}>{children}</main>
         </div>
     )
 }

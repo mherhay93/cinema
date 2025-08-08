@@ -2,6 +2,7 @@
     position: relative;
     min-width: 72px;
     height: 90vh;
+    z-index: 100;
 }
 
 .sidebar {
@@ -58,18 +59,19 @@
 }
 
 .sidebar:hover {
-    width: 300px;
+    width: 500px;
     background: linear-gradient(90deg,
-    var(--black) 0%,
-    var(--black) 60%,
+    var(--black) 40%,
+    var(--black_80) 70%,
     var(--black_30) 100%);
+    transition: 0.3s linear;
 
     .active:after {
-        left: 25%;
+        left: 20%;
         transform: translate(-50%, -50%);
         border-radius: 8px;
         padding: 16px 8px;
-        width: 50%;
+        width: 40%;
         height: 40%;
         transition: 0.1ms linear;
         will-change: transform;
