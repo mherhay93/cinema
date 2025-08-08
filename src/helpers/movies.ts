@@ -1,5 +1,6 @@
-import type {IMovie, IMoviesInterface} from '../types';
-import { getFromSessionStorage, MOVIES_KEY } from './storage.ts';
+import type { IMovie, IMoviesInterface } from '../types';
+import { getFromSessionStorage } from './storage.ts';
+import { MOVIES_KEY } from './constants.ts';
 
 export function sortMoviesData(moviesData: IMoviesInterface): IMoviesInterface {
     const storageIds = getFromSessionStorage(MOVIES_KEY)

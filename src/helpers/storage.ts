@@ -1,4 +1,4 @@
-export const MOVIES_KEY: string = 'movies_history';
+import { MOVIES_KEY } from './constants.ts';
 
 export function addToSessionStorage(key: string, value: string) {
     sessionStorage.setItem(key, value);

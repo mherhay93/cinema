@@ -15,12 +15,11 @@ const MoviesList = ({ movies }: IMoviesListProps) => {
     const isDragging = useRef(false);
     const startX = useRef(0);
     const scrollLeft = useRef(0);
-    const { changeSelectedMovie } = useContext(MoviesContext);
+    const { changeSelectedMovie, setIsStartedVideo, setVideoEnd } = useContext(MoviesContext);
     
     const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
         if (e.deltaY !== 0 && scrollRef.current) {
             scrollRef.current.scrollLeft += e.deltaY;
-            e.preventDefault();
         }
     };
     
@@ -46,6 +45,8 @@ const MoviesList = ({ movies }: IMoviesListProps) => {
     };
     
     const handleSelectMove = (movie: IMovie) => {
+        setVideoEnd(false)
+        setIsStartedVideo(false)
         changeSelectedMovie(movie)
         setHistoryMovies(movie.Id)
     }
