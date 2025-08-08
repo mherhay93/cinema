@@ -1,0 +1,17 @@
+.title {
+    font-family: 'Cinzel_ExtraBold', serif;
+    font-size: 64px;
+    color: transparent;
+    background: url('../../../assets/images/old-wall.webp') repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.startText {
+    font-size: 42px;
+}
